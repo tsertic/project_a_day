@@ -14,13 +14,46 @@ emmiter.on("log", (message, logName) => eventLog(message, logName));
 //PORT
 const PORT = process.env.PORT || 4444;
 //server stuff
-const serveFile = async (filePath, contentType, response) => {};
+const serveFile = async (filePath, contentType, response) => {
+  try {
+    let data;
+    if (filePath.includes("404.html")) {
+      response.writeHead(404, { "Content-Type": contentType });
+      data = await fsP.readFile(filePath);
+      response.end(data);
+    }
+    switch (contentType) {
+      case "image/png":
+      case "image/jpg":
+      case "image/jpeg":
+        response.writeHead(200, { "Content-Type": contentType });
+        data = await fsP.readFile(filePath);
+        response.end(data);
+        break;
+      case "application/json":
+        response.writeHead(200, { "Content-Type": contentType });
+        data = await fsP.readFile(filePath, "utf-8");
+        let jsonData = JSON.parse(data);
+        response.end(JSON.stringify(jsonData));
+        break;
+      default:
+        response.writeHead(200, { "Content-Type": contentType });
+        data = await fsP.readFile(filePath, "utf-8");
+        response.end(data);
+    }
+  } catch (error) {
+    emmiter.emit("log", `${error.name} : ${error.message}`, "serverErrors");
+    console.error(error);
+    response.end();
+  }
+};
 
 const server = http.createServer((req, res) => {
-  emmiter.emit("log", "test", "requests");
-  console.log(req.method, req.url, " METHOD/URL");
+  const addressIp = req.socket.localAddress;
+  const logMessage = `${addressIp}\t${req.method}\t${req.url}`;
+  emmiter.emit("log", logMessage, "requests");
+
   const fileExtension = path.extname(req.url);
-  console.log(fileExtension);
   let contentType;
   switch (fileExtension) {
     case ".txt":
@@ -58,20 +91,28 @@ const server = http.createServer((req, res) => {
   //serving pages and 404/301
   const fileExists = fs.existsSync(filePath);
   if (fileExists) {
+    serveFile(filePath, contentType, res);
   } else {
+    if (contentType !== "text/html") {
+      return;
+    }
     //404 and 301 logic
     const basePath = path.parse(req.url).name;
     switch (basePath) {
       //redirect in case of old route to home page in this case
       case "old":
         res.writeHead(301, { location: "/" });
+        res.end();
         break;
       default:
-      //serve 404 page;
+        //serve 404 page;
+        serveFile(
+          path.join(__dirname, pagesFolder, "404.html"),
+          contentType,
+          res
+        );
     }
   }
-  console.log(filePath);
-  res.end();
 });
 
 server.listen(PORT, () => {
