@@ -1,0 +1,17 @@
+{
+  "name": "day1_pure_node_server",
+  "version": "1.0.0",
+  "description": "Simple vanila nodejs server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Tomislav Sertic",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+1.server setup structure (add dummy pages,data,img)
+2.Create Event Logger function
+3.Setup server
+4.create logic for creating paths for serving files from server
+5.create function for serve files , include txt,json,image,css also
+6.apply logging of requests and another log file for errors
