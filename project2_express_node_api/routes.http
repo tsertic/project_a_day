@@ -1,0 +1,22 @@
+//Need REST Client vs code extension to use this 
+//ROUTES
+
+# METHOD: GET 
+# ROUTE: /users  
+# DESC: find all users
+
+# METHOD: POST 
+# ROUTE: /users 
+# DESC: creates a user
+
+# METHOD: GET 
+# ROUTE: /users/:id 
+# DESC: finds user details
+
+# METHOD: DELETE 
+# ROUTE: /users/:id 
+# DESC: deletes a user
+
+# METHOD: PATCH 
+# ROUTE: /users/:id 
+# DESC: updates a user
