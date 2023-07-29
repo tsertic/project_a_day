@@ -1,0 +1,45 @@
+
+
+// GET
+// v1/todos
+// get all todos
+GET http://127.0.0.1:5678/v1/todos
+
+###
+
+// POST
+// v1/todos
+// create new todo
+GET http://127.0.0.1:5678/v1/todos
+Content-Type: application/json
+
+{
+    "text":"updated text",
+    "finished":false
+}
+
+###
+
+// GET
+// v1/todos/:id
+// get todo by id
+GET http://127.0.0.1:5678/v1/todos/1
+
+###
+
+// PUT
+// v1/todos/:id
+// update todo by id
+PUT http://127.0.0.1:5678/v1/todos/1
+Content-Type: application/json
+
+{
+    "text":"updated text"
+}
+
+###
+
+//DELETE
+// v1/todos/:id
+// delete todo by id
+DELETE http://127.0.0.1:5678/v1/todos/1
