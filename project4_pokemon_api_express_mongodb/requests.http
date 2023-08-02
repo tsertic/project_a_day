@@ -1,0 +1,14 @@
+#GET
+# v1/pokemons
+# get all pokemons
+
+GET http://127.0.0.1:5678/v1/pokemons
+
+###
+
+#GET
+# v1/pokemons?type='fire'
+# query by pokemon type
+
+GET http://127.0.0.1:5678/v1/pokemons?type=fire
+
