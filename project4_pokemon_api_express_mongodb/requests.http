@@ -8,7 +8,15 @@ GET http://127.0.0.1:5678/v1/pokemons
 
 #GET
 # v1/pokemons?type='fire'
-# query by pokemon type
+# query "type" , filter by pokemon type
 
 GET http://127.0.0.1:5678/v1/pokemons?type=fire
+
+###
+
+#GET
+# v1/pokemons?type='fire'
+# query "sort" , value "desc" for reverse sort by pokedexNumber
+
+GET http://127.0.0.1:5678/v1/pokemons?sort=desc
 

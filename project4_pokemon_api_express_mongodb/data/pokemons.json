@@ -1,0 +1,202 @@
+[
+  {
+    "pokedexNumber": 1,
+    "name": "Bulbasaur",
+    "type": "Grass",
+    "description": "A cute and small seed pokemon.",
+    "abilities": ["Overgrow", "Chlorophyll"],
+    "image_url": "https://example.com/images/bulbasaur.jpg",
+    "nextEvolution": "2",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 2,
+    "name": "Ivysaur",
+    "type": "Grass",
+    "description": "The evolved form of Bulbasaur.",
+    "abilities": ["Overgrow", "Chlorophyll"],
+    "image_url": "https://example.com/images/ivysaur.jpg",
+    "nextEvolution": "3",
+    "previousEvolution": "1"
+  },
+  {
+    "pokedexNumber": 3,
+    "name": "Venusaur",
+    "type": "Grass",
+    "description": "The final evolution of Bulbasaur.",
+    "abilities": ["Overgrow", "Chlorophyll"],
+    "image_url": "https://example.com/images/venusaur.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "2"
+  },
+  {
+    "pokedexNumber": 4,
+    "name": "Charmander",
+    "type": "Fire",
+    "description": "A fire-type lizard pokemon.",
+    "abilities": ["Blaze", "Solar Power"],
+    "image_url": "https://example.com/images/charmander.jpg",
+    "nextEvolution": "5",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 5,
+    "name": "Charmeleon",
+    "type": "Fire",
+    "description": "The evolved form of Charmander.",
+    "abilities": ["Blaze", "Solar Power"],
+    "image_url": "https://example.com/images/charmeleon.jpg",
+    "nextEvolution": "6",
+    "previousEvolution": "4"
+  },
+  {
+    "pokedexNumber": 6,
+    "name": "Charizard",
+    "type": "Fire",
+    "description": "The final evolution of Charmander.",
+    "abilities": ["Blaze", "Solar Power"],
+    "image_url": "https://example.com/images/charizard.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "5"
+  },
+  {
+    "pokedexNumber": 7,
+    "name": "Squirtle",
+    "type": "Water",
+    "description": "A water turtle pokemon.",
+    "abilities": ["Torrent", "Rain Dish"],
+    "image_url": "https://example.com/images/squirtle.jpg",
+    "nextEvolution": "8",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 8,
+    "name": "Wartortle",
+    "type": "Water",
+    "description": "The evolved form of Squirtle.",
+    "abilities": ["Torrent", "Rain Dish"],
+    "image_url": "https://example.com/images/wartortle.jpg",
+    "nextEvolution": "9",
+    "previousEvolution": "7"
+  },
+  {
+    "pokedexNumber": 9,
+    "name": "Blastoise",
+    "type": "Water",
+    "description": "The final evolution of Squirtle.",
+    "abilities": ["Torrent", "Rain Dish"],
+    "image_url": "https://example.com/images/blastoise.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "8"
+  },
+  {
+    "pokedexNumber": 10,
+    "name": "Caterpie",
+    "type": "Bug",
+    "description": "A tiny caterpillar pokemon.",
+    "abilities": ["Shield Dust", "Run Away"],
+    "image_url": "https://example.com/images/caterpie.jpg",
+    "nextEvolution": "11",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 11,
+    "name": "Metapod",
+    "type": "Bug",
+    "description": "The evolved form of Caterpie.",
+    "abilities": ["Shed Skin"],
+    "image_url": "https://example.com/images/metapod.jpg",
+    "nextEvolution": "12",
+    "previousEvolution": "10"
+  },
+  {
+    "pokedexNumber": 12,
+    "name": "Butterfree",
+    "type": "Bug",
+    "description": "The final evolution of Caterpie.",
+    "abilities": ["Compound Eyes", "Tinted Lens"],
+    "image_url": "https://example.com/images/butterfree.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "11"
+  },
+  {
+    "pokedexNumber": 13,
+    "name": "Weedle",
+    "type": "Bug",
+    "description": "A hairy caterpillar pokemon.",
+    "abilities": ["Shield Dust", "Run Away"],
+    "image_url": "https://example.com/images/weedle.jpg",
+    "nextEvolution": "14",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 14,
+    "name": "Kakuna",
+    "type": "Bug",
+    "description": "The evolved form of Weedle.",
+    "abilities": ["Shed Skin"],
+    "image_url": "https://example.com/images/kakuna.jpg",
+    "nextEvolution": "15",
+    "previousEvolution": "13"
+  },
+  {
+    "pokedexNumber": 15,
+    "name": "Beedrill",
+    "type": "Bug",
+    "description": "The final evolution of Weedle.",
+    "abilities": ["Swarm", "Sniper"],
+    "image_url": "https://example.com/images/beedrill.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "14"
+  },
+  {
+    "pokedexNumber": 16,
+    "name": "Pidgey",
+    "type": "Normal",
+    "description": "A tiny bird pokemon.",
+    "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"],
+    "image_url": "https://example.com/images/pidgey.jpg",
+    "nextEvolution": "17",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 17,
+    "name": "Pidgeotto",
+    "type": "Normal",
+    "description": "The evolved form of Pidgey.",
+    "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"],
+    "image_url": "https://example.com/images/pidgeotto.jpg",
+    "nextEvolution": "18",
+    "previousEvolution": "16"
+  },
+  {
+    "pokedexNumber": 18,
+    "name": "Pidgeot",
+    "type": "Normal",
+    "description": "The final evolution of Pidgey.",
+    "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"],
+    "image_url": "https://example.com/images/pidgeot.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "17"
+  },
+  {
+    "pokedexNumber": 19,
+    "name": "Rattata",
+    "type": "Normal",
+    "description": "A small mouse pokemon.",
+    "abilities": ["Run Away", "Guts", "Hustle"],
+    "image_url": "https://example.com/images/rattata.jpg",
+    "nextEvolution": "20",
+    "previousEvolution": null
+  },
+  {
+    "pokedexNumber": 20,
+    "name": "Raticate",
+    "type": "Normal",
+    "description": "The evolved form of Rattata.",
+    "abilities": ["Run Away", "Guts", "Hustle"],
+    "image_url": "https://example.com/images/raticate.jpg",
+    "nextEvolution": null,
+    "previousEvolution": "19"
+  }
+]

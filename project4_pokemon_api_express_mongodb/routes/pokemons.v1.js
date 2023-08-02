@@ -1,10 +1,6 @@
 const express = require("express");
+const { getPokemons } = require("../controllers/pokemons");
 const router = express.Router();
-
-router.route("/").get((req, res) => {
-  console.log(req.query);
-
-  res.json({ queries: req.query });
-});
+router.route("/").get(getPokemons);
 
 module.exports = router;
